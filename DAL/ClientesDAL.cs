@@ -60,7 +60,7 @@ namespace DAL
             try
             {
                 //carrega a string de conexão do SQL Server
-                cn.ConnectionString = "Data Source=DESKTOP-RG947R7;Initial Catalog=LOJINHA;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
+                cn.ConnectionString = Dados.StringDeConexao();
                 //cria objeto cmd para executar comandos
                 SqlCommand cmd = new SqlCommand();
                 //cmd recebe a string de conexão
